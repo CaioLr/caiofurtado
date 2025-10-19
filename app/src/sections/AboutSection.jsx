@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { PieChart, Pie, Cell, ResponsiveContainer, Sector } from "recharts";
+import { PieChart, Pie, Cell, ResponsiveContainer, Sector, Tooltip } from "recharts";
 
 
 const AboutSection = () => {
@@ -30,12 +30,9 @@ const AboutSection = () => {
           startAngle={startAngle}
           endAngle={endAngle}
           fill={fill}
+          alt="Expanded sector"
          
         />
-        {/* Nome no centro */}
-        <text x={cx} y={cy} textAnchor="middle" class="bebas-neue-regular" dominantBaseline="middle" fill={fill} fontWeight="bold" fontSize={56}>
-          {name}
-        </text>
       </g>
     );
   };
@@ -55,9 +52,9 @@ const AboutSection = () => {
 
 
   return (
-    <section className=' w-full h-screen flex flex-col items-center justify-center snap-center'>
+    <section id="about" className=' w-full h-screen flex flex-col items-center justify-center snap-center'>
 
-        <p className='bebas-neue-regular mb-8 text-gray-300 text-8xl'>About</p>
+        <p className='bebas-neue-regular mb-8 text-gray-300 text-6xl'>About</p>
         
         <div className='flex flex-row h-[65%] w-3/4 bg-gray-50 rounded-lg shadow-lg shadow-black/30'>
 

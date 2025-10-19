@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
 
 const InitialSection = () => {
   return (
@@ -23,10 +24,12 @@ const InitialSection = () => {
         </div>
 
         <div className='absolute z-10 bottom-20 animate-[updown_3s_ease-in-out_infinite]'>
-           <div className='flex flex-col items-center h-8'>
-                <span className='oswald-regular text-white text-lg'>Scroll Down</span>
+          <Link to="projects" spy={true} smooth={true} offset={50} duration={600} containerId="main-container">
+          <div className='flex flex-col items-center h-8'>
+            
+                <span className='oswald-regular text-white text-lg transition-transform duration-300 hover:scale-105'>Scroll Down</span>
                 <img className='h-8' src="/arrowdown.png" alt="Scroll Down Arrow" />
-           </div>
+           </div></Link>
         </div>
     </section>
   )
