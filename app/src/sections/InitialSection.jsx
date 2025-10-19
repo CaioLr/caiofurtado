@@ -18,8 +18,8 @@ const InitialSection = () => {
         <div className="absolute top-0 left-0 w-full h-full  bg-black/40" />
 
         <div className="relative z-10">
-            <h1 className="bebas-neue-regular text-white text-8xl font-bold">Caio Furtado</h1>
-            <p className="text-white text-xl mt-4">This is a sample video background section.</p>
+            <h1 className="bebas-neue-regular text-center text-white text-8xl font-bold ">Caio Furtado</h1>
+            <p className="open-sans-light text-white text-center text-xl mt-4">A portfolio showcasing the work and passion of a dedicated software engineer.</p>
         </div>
 
         <div className='absolute z-10 bottom-20 animate-[updown_3s_ease-in-out_infinite]'>
