@@ -56,9 +56,9 @@ const AboutSection = () => {
 
         <p className='bebas-neue-regular mb-8 text-gray-300 text-6xl'>About</p>
         
-        <div className='flex flex-row h-[65%] w-3/4 bg-gray-50 rounded-lg shadow-lg shadow-black/30'>
+        <div className='flex flex-row h-[65%] w-3/4 gap-4'>
 
-          <div className='h-full w-2/4'>
+          <div className='h-full w-2/4 bg-gray-50 rounded-lg shadow-md shadow-black/30'>
               <div className='open-sans-regular flex flex-col h-full w-full p-12 text-xl gap-8 justify-center'>
                   <p>Hi, I'm Caio 👋</p>
                   <p>I'm a Software Engineer with a Bachelor's degree in Information Systems. <span className='text-indigo-700'>Over the past six years</span>, I've been deepening my knowledge in all aspects of <span className='text-sky-700'>software engineering.</span></p>
@@ -67,7 +67,7 @@ const AboutSection = () => {
               </div>
           </div>
 
-          <div className='flex flex-col h-full w-2/4 items-center justify-center'>
+          <div className='flex flex-col h-full w-2/4 items-center justify-center bg-gray-50 rounded-lg shadow-md shadow-black/30'>
 
 
             <div className='relative w-[50%] aspect-square '>
