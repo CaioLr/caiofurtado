@@ -1,9 +1,9 @@
 import React, { useRef } from 'react'
-import Nav from '../components/Nav.jsx'
-import AboutSection from '../sections/AboutSection.jsx'
-import InitialSection from '../sections/InitialSection.jsx'
-import ProjectsSection from '../sections/ProjectsSection.jsx'
-import ContactSection from '../sections/ContactSection.jsx'
+import Nav from '../components/Nav'
+import AboutSection from '../sections/AboutSection'
+import InitialSection from '../sections/InitialSection'
+import ProjectsSection from '../sections/ProjectsSection'
+import ContactSection from '../sections/ContactSection'
 
 const Home = () => {
   return (

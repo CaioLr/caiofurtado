@@ -1,5 +1,5 @@
 import React from 'react'
-import LanguageSelector from './LanguageSelector.jsx'
+import LanguageSelector from './LanguageSelector'
 
 const Nav = () => {
   return (
