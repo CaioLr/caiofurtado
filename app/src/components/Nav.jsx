@@ -16,12 +16,7 @@ const Nav = () => {
         </nav>
 
         {/* Mobile */}
-        <nav className='flex lg:hidden absolute h-[72px] z-20 w-full bg-black/90 border-b border-black'>
-
-            
-           
-        </nav>
-
+      
 
     </>
   )

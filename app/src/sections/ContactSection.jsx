@@ -5,7 +5,7 @@ const ContactSection = () => {
     <section id='contact' className='relative w-full h-screen flex flex-col items-center justify-center snap-center'>
         <p className='bebas-neue-regular mb-8 text-gray-300 text-6xl'>Contact</p>
 
-        <p className='open-sans-regular text-black mb-8 mx-4 lg:mx-0'>These are my social networks, where you can follow me or get in touch.</p>
+        <p className='open-sans-regular text-black text-center mb-8 mx-4 lg:mx-0'>These are my social networks, where you can follow me or get in touch.</p>
         
         <div className='flex flex-row h-1/4 w-3/4 lg:w-2/4 gap-8 items-center justify-center'>
             <div className='flex w-2/6 lg:w-1/6 aspect-square items-center justify-center bg-gray-50 shadow-sm shadow-black/30 rounded-full'><a className='w-full h-full flex items-center justify-center' href="https://www.linkedin.com/in/caio-furtado-ramos/" target="_blank">
