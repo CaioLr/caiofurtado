@@ -61,7 +61,7 @@ const AboutSection = () => {
               
             </div>
 
-            <div className='flex flex-col z-0 h-[30%] w-full p-4 items-center justify-start text-center open-sans-regular text-lg'>
+            <div className='flex flex-col z-0 h-[30%] w-full p-4 items-center justify-start text-center open-sans-regular text-sm lg:text-lg'>
               <p>Python · JavaScript · Go</p>
               <p>AWS · Kubernetes · Terraform</p>
               <p>Relational Databases (SQL) . MongoDB</p>
