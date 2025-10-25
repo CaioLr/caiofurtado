@@ -3,7 +3,7 @@ import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy } fro
 
 const InitialSection = () => {
   return (
-    <section className='relative w-full h-screen flex items-center justify-center snap-center'>
+    <section className='relative z-10 w-full h-screen flex items-center justify-center snap-center'>
         
         <video
             className="absolute top-0 left-0 w-full h-full object-cover"
@@ -12,7 +12,7 @@ const InitialSection = () => {
             muted
             playsInline
         >
-            <source src="/videoexample.mp4" type="video/mp4" />
+            <source src="/test.mp4" type="video/mp4" />
             Seu navegador não suporta vídeos em HTML5.
         </video>
 

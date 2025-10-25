@@ -7,7 +7,7 @@ const ContactSection = () => {
 
         <p className='open-sans-regular text-black mb-8'>These are my social networks, where you can follow me or get in touch.</p>
         
-        <div className='flex flex-row h-1/4 w-2/4 gap-8 items-center justify-between'>
+        <div className='flex flex-row h-1/4 w-2/4 gap-8 items-center justify-center'>
             <div className='flex w-1/6 aspect-square items-center justify-center bg-gray-50 shadow-sm shadow-black/30 rounded-full'><a className='w-full h-full flex items-center justify-center' href="https://www.linkedin.com/in/caio-furtado-ramos/" target="_blank">
                 <img className='w-2/4 object-cover' src="/linkedinlogo.png" alt="LinkedIn" />
             </a></div>

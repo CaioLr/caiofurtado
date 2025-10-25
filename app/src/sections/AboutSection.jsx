@@ -18,18 +18,18 @@ const AboutSection = () => {
 
 
   return (
-    <section id="about" className=' w-full h-screen flex flex-col items-center justify-center snap-center'>
+    <section id="about" className='relative w-full h-screen flex flex-col items-center justify-center snap-center'>
 
         <p className='bebas-neue-regular mb-8 text-gray-300 text-6xl'>About</p>
         
-        <div className='flex flex-row h-[65%] w-3/4 gap-4'>
+        <div className='flex flex-row z-10 h-[65%] w-3/4 gap-4'>
 
           <div className='h-full w-2/4 bg-gray-50 rounded-lg shadow-sm shadow-black/30'>
               <div className='open-sans-regular flex flex-col h-full w-full p-12 text-xl gap-8 justify-center'>
                   <p>Hi, I'm Caio 👋</p>
-                  <p>I'm a Software Engineer with a Bachelor's degree in Information Systems. <span className='text-sky-700'>Over the past six years</span>, I've been deepening my knowledge in all aspects of <span className='text-sky-900'>software engineering.</span></p>
-                  <p>I've worked with <span className='text-sky-700'>companies around the world</span>, starting as a developer and later taking on roles as a TSE, where I honed my problem-solving and communication skills.</p>
-                  <p>Currently, I'm focused on studying and applying concepts related to <span className='text-sky-900'>cloud engineering and software architecture</span>, aiming to build scalable and efficient systems.</p>
+                  <p className='text-justify'>I'm a Software Engineer with a Bachelor's degree in Information Systems. <span className='text-sky-700'>Over the past six years</span>, I've been deepening my knowledge in all aspects of <span className='text-sky-900'>software engineering.</span></p>
+                  <p className='text-justify'>I've worked with <span className='text-sky-700'>companies around the world</span>, starting as a developer and later taking on roles as a TSE, where I honed my problem-solving and communication skills.</p>
+                  <p className='text-justify'>Currently, I'm focused on studying and applying concepts related to <span className='text-sky-900'>cloud engineering and software architecture</span>, aiming to build scalable and efficient systems.</p>
               </div>
           </div>
 
@@ -69,6 +69,13 @@ const AboutSection = () => {
             
           </div>
 
+        </div>
+
+        <div className='absolute rotate-x-30 rotate-z-20  -bottom-65 -left-40 w-[40%] h-[55%] rounded-2xl border border-stone-500  p-12'>
+
+          <div className='relative h-full w-full flex flex-col justify-center items-center bg-gray-50 rounded-2xl shadow-xl shadow-black/50'>
+              <img className='h-2/5 -rotate-z-20 object-scale-down' src="/gopng.png" alt="" />
+          </div>
         </div>
       
         
