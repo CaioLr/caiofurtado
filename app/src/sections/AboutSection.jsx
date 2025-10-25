@@ -20,20 +20,20 @@ const AboutSection = () => {
   return (
     <section id="about" className='relative w-full h-screen flex flex-col items-center justify-center snap-center'>
 
-        <p className='bebas-neue-regular mb-8 text-gray-300 text-6xl'>About</p>
+        <p className='bebas-neue-regular mb-2 lg:mb-8 text-gray-300 text-6xl'>About</p>
         
-        <div className='flex flex-row z-10 h-[65%] w-3/4 gap-4'>
+        <div className='flex flex-col lg:flex-row z-10 h-[75%] lg:h-[65%] w-3/4 gap-4'>
 
-          <div className='h-full w-2/4 bg-gray-50 rounded-lg shadow-sm shadow-black/30'>
-              <div className='open-sans-regular flex flex-col h-full w-full p-12 text-xl gap-8 justify-center'>
-                  <p>Hi, I'm Caio 👋</p>
-                  <p className='text-justify'>I'm a Software Engineer with a Bachelor's degree in Information Systems. <span className='text-sky-700'>Over the past six years</span>, I've been deepening my knowledge in all aspects of <span className='text-sky-900'>software engineering.</span></p>
+          <div className='h-2/4 lg:h-full w-full lg:w-2/4 bg-gray-50 rounded-lg shadow-sm shadow-black/30'>
+              <div className='open-sans-regular flex flex-col h-full w-full p-6 lg:p-12 text-sm lg:text-xl gap-8 justify-center overflow-y-scroll'>
+                  <p className=' mt-24 lg:mt-0'>Hi, I'm Caio 👋</p>
+                  <p className='text-justify '>I'm a Software Engineer with a Bachelor's degree in Information Systems. <span className='text-sky-700'>Over the past six years</span>, I've been deepening my knowledge in all aspects of <span className='text-sky-900'>software engineering.</span></p>
                   <p className='text-justify'>I've worked with <span className='text-sky-700'>companies around the world</span>, starting as a developer and later taking on roles as a TSE, where I honed my problem-solving and communication skills.</p>
                   <p className='text-justify'>Currently, I'm focused on studying and applying concepts related to <span className='text-sky-900'>cloud engineering and software architecture</span>, aiming to build scalable and efficient systems.</p>
               </div>
           </div>
 
-          <div className='flex flex-col h-full w-2/4 items-center justify-center bg-gray-50 rounded-lg shadow-sm shadow-black/30'>
+          <div className='flex flex-col h-2/4 lg:h-full w-full lg:w-2/4 items-center justify-center bg-gray-50 rounded-lg shadow-sm shadow-black/30'>
 
 
             <div className='relative w-[50%] aspect-square '>

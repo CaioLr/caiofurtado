@@ -4,13 +4,13 @@ const ProjectsSection = () => {
   return (
     <section id="projects" className='relative w-full h-screen flex flex-col items-center gap-8 justify-center snap-center'>
 
-        <div className='absolute h-3/4 w-[35%] left-0 flex flex-col justify-center'>
-            <p className='Oswald text-4xl px-10 py-4 mb-8'>Take a look at my projects and explore the details of it in my projects page.</p>
-            <p className='open-sans-regular text-lg px-10 pb-4'>Visit my projects page to learn more about the challenges and technologies I’ve worked with. There you’ll find more details about the concepts, planning stages, and development processes of the projects I’ve been involved in.</p>
-            <button className='bg-transparent hover:bg-sky-600 font-semibold text-sky-600 hover:text-white  w-2/4 mx-10 my-4 p-2 border border-sky-600 hover:border-transparent rounded' onClick={() => window.location.href='/projects'}>Click here to visit the projects page.</button>
+        <div className='absolute z-10 h-3/4 lg:w-[35%] left-0 flex flex-col lg:justify-center'>
+            <p className='Oswald text-3xl lg:text-4xl px-4 lg:px-10 py-1 lg:py-4 mb-2 lg:mb-8'>Take a look at my projects and explore the details of it in my projects page.</p>
+            <p className='hidden lg:flex open-sans-regular text-lg px-2 lg:px-10 pb-2 lg:pb-4'>Visit my projects page to learn more about the challenges and technologies I’ve worked with. There you’ll find more details about the concepts, planning stages, and development processes of the projects I’ve been involved in.</p>
+            <button className='bg-sky-600 lg:bg-transparent hover:bg-sky-600 font-semibold text-white lg:text-sky-600 hover:text-white  w-2/4 mx-4 lg:mx-10 m-2 lg:my-4 p-2 border border-sky-600 hover:border-transparent rounded' onClick={() => window.location.href='/projects'}>Click here to visit the projects page.</button>
         </div>
 
-        <div className='absolute  rotate-x-30 rotate-z-20 -right-60 -bottom-35  h-[120%] w-[75%] rounded-2xl border border-stone-500  p-12 '>
+        <div className='absolute  rotate-x-30 rotate-z-20 -right-80 lg:-right-60 -bottom-20 lg:-bottom-35  h-[80%] lg:h-[120%] w-[200%] lg:w-[75%] rounded-2xl border border-stone-500  p-12 '>
         <div className='relative h-full w-full flex flex-col justify-center items-center bg-stone-100 rounded-2xl shadow-xl shadow-black/50'>
             
             <div className='flex w-full h-[10%] justify-center items-center'>
