@@ -22,7 +22,7 @@ const AboutSection = () => {
 
         <p className='bebas-neue-regular mb-2 lg:mb-8 text-gray-300 text-6xl'>About</p>
         
-        <div className='flex flex-col lg:flex-row z-10 h-[85%] lg:h-[65%] w-3/4 gap-4'>
+        <div className='flex flex-col lg:flex-row z-10 h-[85%] lg:h-[65%] w-[90%] lg:w-3/4 gap-4'>
 
           <div className='h-2/4 lg:h-full w-full lg:w-2/4 bg-gray-50 rounded-lg shadow-sm shadow-black/30'>
               <div className='open-sans-regular flex flex-col h-full w-full p-6 lg:p-12 text-sm lg:text-xl gap-8 justify-center overflow-y-scroll'>
