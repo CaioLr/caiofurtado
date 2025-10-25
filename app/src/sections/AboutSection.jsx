@@ -15,11 +15,95 @@ const AboutSection = () => {
     { name: "MongoDB", value: 1, color: "#2E6C30" },     // Verde escuro
   ];
 
+  const anoAtual = new Date().getFullYear();
 
+  const studyYears = anoAtual - 2019;
+  const workYears = anoAtual - 2022;
 
   return (
-    <section id="about" className='relative w-full h-screen flex flex-col items-center justify-center snap-center'>
+    <section id="about" className='relative z-10 w-full h-screen flex flex-col items-center justify-center snap-center'>
 
+
+        <div className='flex flex-row w-full h-1/5 mb-8 gap-4 items-center justify-center'>
+
+          <div className='flex flex-col h-full w-1/7 text-center justify-center items-center bg-stone-100 rounded-lg shadow-lg shadow-black/50'>
+              <p className='bebas-neue-regular text-6xl text-gray-500'>{studyYears} +</p>
+              <p className='Oswald text-2xl px-4 text-gray-500'> Years studying software engineering</p>
+          </div>
+          <div className='flex flex-col h-full w-1/7 text-center justify-center items-center bg-stone-100 rounded-lg shadow-lg shadow-black/50'>
+              <p className='bebas-neue-regular text-6xl text-gray-500'>{workYears} +</p>
+              <p className='Oswald text-2xl px-4 text-gray-500'> Years working experience in tech</p>
+          </div>
+          <div className='flex flex-col h-full w-1/7 text-center justify-center items-center bg-stone-100 rounded-lg shadow-lg shadow-black/50'>
+              <p className='bebas-neue-regular text-6xl text-gray-500'>3</p>
+              <p className='Oswald text-2xl px-4 text-gray-500'>Different countries worked in</p>
+          </div>
+          <div className='flex flex-col h-full w-1/7 text-center justify-center items-center bg-stone-100 rounded-lg shadow-lg shadow-black/50'>
+            <img className='object-scale-down h-2/5' src="/about/diploma.svg" alt="" />
+              <p className='Oswald text-2xl px-4 text-gray-500'>Bachelor's degree in Information Systems</p>
+          </div>
+
+        </div>
+
+        <div className='relative z-10 flex flex-row justify-center items-center mt-8 w-2/4 h-2/4'>
+
+          <div
+            tabIndex="0"
+            className='absolute w-[16rem] h-[25rem] flex justify-center items-center left-0 -bottom-5 -rotate-z-15  bg-gray-100 shadow-sm shadow-black/30 text-center rounded-md hover:mb-12
+            focus:z-20 focus:left-auto focus:bottom-auto focus:rotate-z-0 focus:shadow-2xl focus:shadow-black/50'
+          >
+            <div className='flex flex-col h-full w-3/4 justify-center gap-2 items-center'>
+              <img className='object-scale-down w-2/4' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" />
+              <img className='object-scale-down w-2/4' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg" />
+            </div>
+          </div>
+          <div
+            tabIndex="0"
+            className='absolute w-[16rem] h-[25rem] flex justify-center items-center left-40 bottom-2.5 -rotate-z-5 bg-gray-100 shadow-sm shadow-black/30 text-center rounded-md hover:mb-12
+            focus:z-20 focus:left-auto focus:bottom-auto focus:rotate-z-0 focus:shadow-2xl focus:shadow-black/50'
+          >
+            <div className='flex flex-col h-full w-3/4 justify-center gap-2 items-center'>
+              <img className='object-scale-down w-2/4' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" />
+        
+            </div>
+            
+          
+          </div>
+          <div
+            tabIndex="0"
+            className='absolute w-[16rem] h-[25rem] flex justify-center items-center bottom-5  bg-gray-100 shadow-sm shadow-black/30 text-center rounded-md hover:mb-12
+            focus:z-20 focus:left-auto focus:bottom-auto focus:rotate-z-0 focus:shadow-2xl focus:shadow-black/50'
+          >
+            <div className='flex flex-col h-full w-3/4 justify-center gap-2 items-center'>
+              <img className='object-scale-down w-2/4' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+        
+            </div>
+          </div>
+          <div
+            tabIndex="0"
+            className='absolute w-[16rem] h-[25rem] flex justify-center items-center right-40 bottom-2.5 rotate-z-5 bg-gray-100 shadow-sm shadow-black/30 text-center rounded-md hover:mb-12
+            focus:z-20 focus:right-auto focus:bottom-auto focus:rotate-z-0 focus:shadow-2xl focus:shadow-black/50'
+          >
+            <div className='flex flex-col h-full w-3/4 justify-center gap-2 items-center'>
+              <img className='object-scale-down w-2/4' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" />
+              <img className='object-scale-down w-2/4' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original-wordmark.svg" />
+            </div>
+          </div>
+          <div
+            tabIndex="0"
+            className='absolute w-[16rem] h-[25rem] flex justify-center items-center right-0 -bottom-5  rotate-z-15 bg-gray-100 shadow-sm shadow-black/30 text-center rounded-md hover:mb-12
+            focus:z-20 focus:right-auto focus:bottom-auto focus:rotate-z-0 focus:shadow-4xl focus:shadow-black/50'
+          >
+            <div className='flex flex-col h-full w-3/4 justify-center gap-2 items-center'>
+              <img className='object-scale-down w-2/4' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original-wordmark.svg" />
+              <img className='object-scale-down w-2/4' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/terraform/terraform-original-wordmark.svg" />
+            </div>
+          </div>
+
+        </div>
+
+
+{/* 
         <p className='bebas-neue-regular mb-2 lg:mb-8 text-gray-300 text-6xl'>About</p>
         
         <div className='flex flex-col lg:flex-row z-10 h-[85%] lg:h-[65%] w-[90%] lg:w-3/4 gap-4'>
@@ -69,9 +153,9 @@ const AboutSection = () => {
             
           </div>
 
-        </div>
+        </div> */}
 
-        <div className='absolute rotate-x-30 rotate-z-20  -bottom-65 -left-40 w-[40%] h-[55%] rounded-2xl border border-stone-500  p-12'>
+         <div className='absolute rotate-x-30 rotate-z-20  -bottom-65 -left-40 w-[40%] h-[55%] rounded-2xl border border-stone-500  p-12'>
 
           <div className='relative h-full w-full flex flex-col justify-center items-center bg-gray-50 rounded-2xl shadow-xl shadow-black/50'>
               <img className='h-2/5 -rotate-z-20 object-scale-down' src="/gopng.png" alt="" />
