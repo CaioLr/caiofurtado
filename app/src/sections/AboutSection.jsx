@@ -4,17 +4,6 @@ import { PieChart, Pie, Cell, ResponsiveContainer, Sector, Tooltip } from "recha
 
 const AboutSection = () => {
 
-  const data = [
-    { name: "Python", value: 3, color: "#1F4E79" },       // Azul escuro
-    { name: "JavaScript", value: 2, color: "#BFB13A" },   // Amarelo escuro
-    { name: "Go", value: 1, color: "#007A99" },           // Azul petróleo
-    { name: "AWS", value: 3, color: "#B46900" },          // Laranja escuro
-    { name: "Kubernetes", value: 2, color: "#2B3A3F" },  // Cinza azulado escuro
-    { name: "Terraform", value: 2, color: "#5C2E8A" },   // Roxo escuro
-    { name: "Relational DB", value: 2, color: "#A76A00" },// Laranja queimado
-    { name: "MongoDB", value: 1, color: "#2E6C30" },     // Verde escuro
-  ];
-
   const anoAtual = new Date().getFullYear();
 
   const studyYears = anoAtual - 2019;
@@ -49,7 +38,7 @@ const AboutSection = () => {
 
           <div
             tabIndex="0"
-            className='absolute w-[16rem] h-[25rem] flex justify-center items-center left-0 -bottom-5 -rotate-z-15  bg-gray-100 shadow-sm shadow-black/30 text-center rounded-md hover:mb-12
+            className='absolute w-[10.24rem] h-[16rem] lg:w-[12.8rem] lg:h-[20rem] 2xl:w-[16rem] 2xl:h-[25rem] flex justify-center items-center left-0 -bottom-5 -rotate-z-15  bg-gray-100 shadow-sm shadow-black/30 text-center rounded-md hover:mb-12
             focus:z-20 focus:left-auto focus:bottom-auto focus:rotate-z-0 focus:shadow-2xl focus:shadow-black/50'
           >
             <div className='flex flex-col h-[95%] w-[90%] justify-center gap-2 items-center border-2 border-gray-500 rounded-md'>
@@ -59,15 +48,16 @@ const AboutSection = () => {
               </div>
 
               <div className='flex w-full h-2/4'>
-                  <p className='Oswald text-md px-4 text-gray-500'>I have experience in designing and maintaining relational databases, and MongoDB for non-relational databases.</p>
+                  <p className='Oswald text-xs lg:text-sm 2xl:text-md px-4 text-gray-500'>I have experience in designing and maintaining relational databases, and MongoDB for non-relational databases.</p>
               </div>
 
               
             </div>
           </div>
+
           <div
             tabIndex="0"
-            className='absolute w-[16rem] h-[25rem] flex justify-center items-center left-40 bottom-2.5 -rotate-z-5 bg-gray-100 shadow-sm shadow-black/30 text-center rounded-md hover:mb-12
+            className='absolute w-[10.24rem] h-[16rem] lg:w-[12.8rem] lg:h-[20rem] 2xl:w-[16rem] 2xl:h-[25rem] flex justify-center items-center left-22.5 lg:left-40 bottom-2.5 -rotate-z-5 bg-gray-100 shadow-sm shadow-black/30 text-center rounded-md hover:mb-12
             focus:z-20 focus:left-auto focus:bottom-auto focus:rotate-z-0 focus:shadow-2xl focus:shadow-black/50'
           >
             <div className='flex flex-col h-[95%] w-[90%] justify-center gap-2 items-center border-2 border-gray-500 rounded-md'>
@@ -77,7 +67,7 @@ const AboutSection = () => {
               </div>
 
               <div className='flex w-full h-2/4'>
-                  <p className='Oswald text-md px-4 text-gray-500'>AWS is the cloud computing platform I’ve had the most experience with.</p>
+                  <p className='Oswald text-xs lg:text-sm 2xl:text-md px-4 text-gray-500'>AWS is the cloud computing platform I’ve had the most experience with.</p>
               </div>
               
         
@@ -85,9 +75,10 @@ const AboutSection = () => {
             
           
           </div>
+
           <div
             tabIndex="0"
-            className='absolute w-[16rem] h-[25rem] flex justify-center items-center bottom-5  bg-gray-100 shadow-sm shadow-black/30 text-center rounded-md hover:mb-12
+            className='absolute w-[10.24rem] h-[16rem] lg:w-[12.8rem] lg:h-[20rem] 2xl:w-[16rem] 2xl:h-[25rem] flex justify-center items-center bottom-5  bg-gray-100 shadow-sm shadow-black/30 text-center rounded-md hover:mb-12
             focus:z-20 focus:left-auto focus:bottom-auto focus:rotate-z-0 focus:shadow-2xl focus:shadow-black/50'
           >
             <div className='flex flex-col h-[95%] w-[90%] justify-center gap-2 items-center border-2 border-gray-500 rounded-md'>
@@ -97,15 +88,16 @@ const AboutSection = () => {
               </div>
 
               <div className='flex w-full h-2/4'>
-                  <p className='Oswald text-md px-4 text-gray-500'>I usually use JavaScript for front-end development in my projects, most often together with React and Tailwind CSS.</p>
+                  <p className='Oswald text-xs lg:text-sm 2xl:text-md px-4 text-gray-500'>I usually use JavaScript for front-end development in my projects, most often together with React and Tailwind CSS.</p>
               </div>
               
         
             </div>
           </div>
+
           <div
             tabIndex="0"
-            className='absolute w-[16rem] h-[25rem] flex justify-center items-center right-40 bottom-2.5 rotate-z-5 bg-gray-100 shadow-sm shadow-black/30 text-center rounded-md hover:mb-12
+            className='absolute w-[10.24rem] h-[16rem] lg:w-[12.8rem] lg:h-[20rem] 2xl:w-[16rem] 2xl:h-[25rem] flex justify-center items-center right-22.5 lg:right-40 bottom-2.5 rotate-z-5 bg-gray-100 shadow-sm shadow-black/30 text-center rounded-md hover:mb-12
             focus:z-20 focus:right-auto focus:bottom-auto focus:rotate-z-0 focus:shadow-2xl focus:shadow-black/50'
           >
             <div className='flex flex-col h-[95%] w-[90%] justify-center gap-2 items-center border-2 border-gray-500 rounded-md'>
@@ -116,7 +108,7 @@ const AboutSection = () => {
               </div>
 
               <div className='flex w-full h-2/4'>
-                  <p className='Oswald text-md px-4 text-gray-500'>Python and Go are my favorite languages for developing scripts, APIs, and back-end systems.</p>
+                  <p className='Oswald text-xs lg:text-sm 2xl:text-md px-4 text-gray-500'>Python and Go are my favorite languages for developing scripts, APIs, and back-end systems.</p>
               </div>
 
             
@@ -126,9 +118,10 @@ const AboutSection = () => {
 
 
           </div>
+
           <div
             tabIndex="0"
-            className='absolute w-[16rem] h-[25rem] flex justify-center items-center right-0 -bottom-5  rotate-z-15 bg-gray-100 shadow-sm shadow-black/30 text-center rounded-md hover:mb-12
+            className='absolute w-[10.24rem] h-[16rem] lg:w-[12.8rem] lg:h-[20rem] 2xl:w-[16rem] 2xl:h-[25rem] flex justify-center items-center right-0 -bottom-5  rotate-z-15 bg-gray-100 shadow-sm shadow-black/30 text-center rounded-md hover:mb-12
             focus:z-20 focus:right-auto focus:bottom-auto focus:rotate-z-0 focus:shadow-4xl focus:shadow-black/50'
           >
             
@@ -140,7 +133,7 @@ const AboutSection = () => {
               </div>
 
               <div className='flex w-full h-2/4'>
-                  <p className='Oswald text-md px-4 text-gray-500'>I use Terraform and Docker/Kubernetes to apply cloud engineering concepts in my projects.</p>
+                  <p className='Oswald text-xs lg:text-sm 2xl:text-md px-4 text-gray-500'>I use Terraform and Docker/Kubernetes to apply cloud engineering concepts in my projects.</p>
               </div>
 
               
@@ -150,7 +143,7 @@ const AboutSection = () => {
         </div>
 
 
-         <div className='absolute rotate-x-30 rotate-z-20  -bottom-65 -left-40 w-[46rem] h-[32rem] rounded-2xl border border-stone-500  p-12'>
+         <div className='absolute hidden xl:flex rotate-x-30 rotate-z-20  -bottom-65 -left-40 w-[46rem] h-[32rem] rounded-2xl border border-stone-500  p-12'>
 
           <div className='relative h-full w-full flex flex-col justify-center items-center bg-gray-50 rounded-2xl shadow-xl shadow-black/50'>
               <img className='h-2/5 -rotate-z-20 object-scale-down' src="/gopng.png" alt="" />
