@@ -16,11 +16,11 @@ const InitialSection = () => {
             Seu navegador não suporta vídeos em HTML5.
         </video>
 
-        <div className="absolute top-0 left-0 w-full h-full  bg-black/40" />
+        <div className="absolute top-0 left-0 w-full h-full  bg-black/30" />
 
         <div className="relative z-10">
             <h1 className="bebas-neue-regular text-center text-white text-8xl font-bold ">Caio Furtado</h1>
-            <p className="open-sans-light text-white text-center text-xl mt-4">A portfolio showcasing the work and passion of a dedicated software engineer.</p>
+            <p className="bebas-neue-regular text-white text-center text-4xl mt-4">A portfolio showcasing the work and passion of a software engineer.</p>
         </div>
 
         <div className='absolute z-10 bottom-20 animate-[updown_3s_ease-in-out_infinite]'>
