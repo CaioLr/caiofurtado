@@ -52,9 +52,17 @@ const AboutSection = () => {
             className='absolute w-[16rem] h-[25rem] flex justify-center items-center left-0 -bottom-5 -rotate-z-15  bg-gray-100 shadow-sm shadow-black/30 text-center rounded-md hover:mb-12
             focus:z-20 focus:left-auto focus:bottom-auto focus:rotate-z-0 focus:shadow-2xl focus:shadow-black/50'
           >
-            <div className='flex flex-col h-full w-3/4 justify-center gap-2 items-center'>
-              <img className='object-scale-down w-2/4' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" />
-              <img className='object-scale-down w-2/4' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg" />
+            <div className='flex flex-col h-[95%] w-[90%] justify-center gap-2 items-center border-2 border-gray-500 rounded-md'>
+              <div className='flex items-center justify-center w-full h-2/4 gap-2'>
+                <img className='object-scale-down w-[35%]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" />
+                <img className='object-scale-down w-[35%]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg" />
+              </div>
+
+              <div className='flex w-full h-2/4'>
+                  <p className='Oswald text-md px-4 text-gray-500'>I have experience in designing and maintaining relational databases, and MongoDB for non-relational databases.</p>
+              </div>
+
+              
             </div>
           </div>
           <div
@@ -62,8 +70,16 @@ const AboutSection = () => {
             className='absolute w-[16rem] h-[25rem] flex justify-center items-center left-40 bottom-2.5 -rotate-z-5 bg-gray-100 shadow-sm shadow-black/30 text-center rounded-md hover:mb-12
             focus:z-20 focus:left-auto focus:bottom-auto focus:rotate-z-0 focus:shadow-2xl focus:shadow-black/50'
           >
-            <div className='flex flex-col h-full w-3/4 justify-center gap-2 items-center'>
-              <img className='object-scale-down w-2/4' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" />
+            <div className='flex flex-col h-[95%] w-[90%] justify-center gap-2 items-center border-2 border-gray-500 rounded-md'>
+
+              <div className='flex items-center justify-center w-full h-2/4'>
+                <img className='object-scale-down w-[35%]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" />
+              </div>
+
+              <div className='flex w-full h-2/4'>
+                  <p className='Oswald text-md px-4 text-gray-500'>AWS is the cloud computing platform I’ve had the most experience with.</p>
+              </div>
+              
         
             </div>
             
@@ -74,8 +90,16 @@ const AboutSection = () => {
             className='absolute w-[16rem] h-[25rem] flex justify-center items-center bottom-5  bg-gray-100 shadow-sm shadow-black/30 text-center rounded-md hover:mb-12
             focus:z-20 focus:left-auto focus:bottom-auto focus:rotate-z-0 focus:shadow-2xl focus:shadow-black/50'
           >
-            <div className='flex flex-col h-full w-3/4 justify-center gap-2 items-center'>
-              <img className='object-scale-down w-2/4' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+            <div className='flex flex-col h-[95%] w-[90%] justify-center gap-2 items-center border-2 border-gray-500 rounded-md'>
+
+              <div className='flex items-center justify-center w-full h-2/4'>
+                <img className='object-scale-down w-[35%]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+              </div>
+
+              <div className='flex w-full h-2/4'>
+                  <p className='Oswald text-md px-4 text-gray-500'>I usually use JavaScript for front-end development in my projects, most often together with React and Tailwind CSS.</p>
+              </div>
+              
         
             </div>
           </div>
@@ -84,19 +108,42 @@ const AboutSection = () => {
             className='absolute w-[16rem] h-[25rem] flex justify-center items-center right-40 bottom-2.5 rotate-z-5 bg-gray-100 shadow-sm shadow-black/30 text-center rounded-md hover:mb-12
             focus:z-20 focus:right-auto focus:bottom-auto focus:rotate-z-0 focus:shadow-2xl focus:shadow-black/50'
           >
-            <div className='flex flex-col h-full w-3/4 justify-center gap-2 items-center'>
-              <img className='object-scale-down w-2/4' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" />
-              <img className='object-scale-down w-2/4' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original-wordmark.svg" />
+            <div className='flex flex-col h-[95%] w-[90%] justify-center gap-2 items-center border-2 border-gray-500 rounded-md'>
+
+              <div className='flex items-center justify-center w-full h-2/4'>
+                <img className='object-scale-down w-[35%]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" />
+                <img className='object-scale-down w-[35%]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original-wordmark.svg" />
+              </div>
+
+              <div className='flex w-full h-2/4'>
+                  <p className='Oswald text-md px-4 text-gray-500'>Python and Go are my favorite languages for developing scripts, APIs, and back-end systems.</p>
+              </div>
+
+            
             </div>
+
+
+
+
           </div>
           <div
             tabIndex="0"
             className='absolute w-[16rem] h-[25rem] flex justify-center items-center right-0 -bottom-5  rotate-z-15 bg-gray-100 shadow-sm shadow-black/30 text-center rounded-md hover:mb-12
             focus:z-20 focus:right-auto focus:bottom-auto focus:rotate-z-0 focus:shadow-4xl focus:shadow-black/50'
           >
-            <div className='flex flex-col h-full w-3/4 justify-center gap-2 items-center'>
-              <img className='object-scale-down w-2/4' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original-wordmark.svg" />
-              <img className='object-scale-down w-2/4' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/terraform/terraform-original-wordmark.svg" />
+            
+            <div className='flex flex-col h-[95%] w-[90%] justify-center gap-2 items-center border-2 border-gray-500 rounded-md'>
+
+              <div className='flex items-center justify-center w-full h-2/4 gap-4'>
+                <img className='object-scale-down w-[35%]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original-wordmark.svg" />
+                <img className='object-scale-down w-[35%]' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/terraform/terraform-original-wordmark.svg" />
+              </div>
+
+              <div className='flex w-full h-2/4'>
+                  <p className='Oswald text-md px-4 text-gray-500'>I use Terraform and Docker/Kubernetes to apply cloud engineering concepts in my projects.</p>
+              </div>
+
+              
             </div>
           </div>
 
