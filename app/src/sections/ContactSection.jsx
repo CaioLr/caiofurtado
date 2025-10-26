@@ -8,15 +8,15 @@ const ContactSection = () => {
         <p className='open-sans-regular text-black text-center mb-8'>These are my social networks, where you can follow me or get in touch.</p>
         
         <div className='flex flex-row w-[37.5rem] lg:w-[59.5rem] h-[14.7rem] gap-8 items-center justify-center'>
-            <div className='flex w-1/6 aspect-square items-center justify-center bg-gray-50 shadow-sm shadow-black/30 rounded-full'><a className='w-full h-full flex items-center justify-center' href="https://www.linkedin.com/in/caio-furtado-ramos/" target="_blank">
+            <div className='flex w-1/7 aspect-square items-center justify-center bg-gray-50 shadow-sm shadow-black/30 rounded-full'><a className='w-full h-full flex items-center justify-center' href="https://www.linkedin.com/in/caio-furtado-ramos/" target="_blank">
                 <img className='w-2/4 object-cover' src="/linkedinlogo.png" alt="LinkedIn" />
             </a></div>
 
-            <div className='flex w-1/6 aspect-square items-center justify-center bg-gray-50 shadow-sm shadow-black/30 rounded-full'> <a className='w-full h-full flex items-center justify-center' href="https://www.youtube.com/@CaioFurtadoLr" target="_blank">
+            <div className='flex w-1/7 aspect-square items-center justify-center bg-gray-50 shadow-sm shadow-black/30 rounded-full'> <a className='w-full h-full flex items-center justify-center' href="https://www.youtube.com/@CaioFurtadoLr" target="_blank">
                 <img className='w-4/4 object-cover' src="/youtubelogo.png" alt="YouTube" />
             </a></div>
 
-            <div className='flex w-1/6 aspect-square items-center justify-center bg-gray-50 shadow-sm shadow-black/30 rounded-full'><a className='w-full h-full flex items-center justify-center' href="https://github.com/CaioLr" target="_blank">
+            <div className='flex w-1/7 aspect-square items-center justify-center bg-gray-50 shadow-sm shadow-black/30 rounded-full'><a className='w-full h-full flex items-center justify-center' href="https://github.com/CaioLr" target="_blank">
                 <img className='w-2/4 object-cover' src="/githublogo.png" alt="GitHub" />
             </a></div>
 

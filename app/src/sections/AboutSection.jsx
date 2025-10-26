@@ -143,7 +143,7 @@ const AboutSection = () => {
         </div>
 
 
-         <div className='absolute hidden xl:flex rotate-x-30 rotate-z-20  -bottom-65 -left-40 w-[46rem] h-[32rem] rounded-2xl border border-stone-500  p-12'>
+         <div className='absolute hidden 2xl:flex rotate-x-30 rotate-z-20  -bottom-65 -left-40 w-[46rem] h-[32rem] rounded-2xl border border-stone-500  p-12'>
 
           <div className='relative h-full w-full flex flex-col justify-center items-center bg-gray-50 rounded-2xl shadow-xl shadow-black/50'>
               <img className='h-2/5 -rotate-z-20 object-scale-down' src="/gopng.png" alt="" />
