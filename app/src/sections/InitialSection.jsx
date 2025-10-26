@@ -13,10 +13,10 @@ const InitialSection = () => {
             playsInline
         >
             <source src="/test.mp4" type="video/mp4" />
-            Seu navegador não suporta vídeos em HTML5.
+           
         </video>
 
-        <div className="absolute top-0 left-0 w-full h-full  bg-stone-950/70" />
+        <div className="absolute top-0 left-0 w-full h-full  bg-stone-900/80" />
 
         <div className="relative w-[60%] z-10">
             <h1 className="playfair-display-regular text-center text-white text-xl lg:text-2xl 2xl:text-4xl font-bold ">Caio Furtado</h1>
