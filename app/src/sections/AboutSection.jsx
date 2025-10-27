@@ -4,6 +4,28 @@ import { PieChart, Pie, Cell, ResponsiveContainer, Sector, Tooltip } from "recha
 
 const AboutSection = () => {
 
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        const el = entry.target;
+            if (entry.isIntersecting) {
+            el.classList.remove( 'translate-y-2.5', '-translate-x-1', 'shadow-none');
+            el.classList.add( 'translate-y-0', 'translate-x-0', 'shadow-lg');
+        } else {
+            el.classList.remove( 'translate-y-0', 'translate-x-0', 'shadow-lg');
+            el.classList.add( 'translate-y-2.5', '-translate-x-1', 'shadow-none');
+        }
+    });
+  }, { threshold: 0.5 });
+
+
+  document.querySelectorAll('.card').forEach(card => {
+        observer.observe(card);
+
+        if (card.getBoundingClientRect().top < window.innerHeight) {
+        card.classList.add( 'translate-y-0', 'translate-x-0', 'shadow-xl');
+        }
+  });
+
   const anoAtual = new Date().getFullYear();
 
   const studyYears = anoAtual - 2019;
@@ -15,19 +37,19 @@ const AboutSection = () => {
 
         <div className='flex flex-wrap w-full h-[35%] md:h-[8.32rem] lg:w-[104.7rem] lg:h-[10.4rem] 2xl:w-[119rem] 2xl:h-[11.8rem] mb-8 gap-4 items-center justify-center'>
 
-          <div className='flex flex-col  w-[8rem] lg:w-[12rem] 2xl:w-[17rem] h-[8.32rem] lg:h-[10.4rem] 2xl:h-[11.8rem] text-center justify-center items-center bg-stone-100 rounded-lg shadow-lg shadow-black/50'>
+          <div className='card transition-all duration-1000 ease-out flex flex-col  w-[8rem] lg:w-[12rem] 2xl:w-[17rem] h-[8.32rem] lg:h-[10.4rem] 2xl:h-[11.8rem] text-center justify-center items-center bg-stone-100 rounded-lg shadow-lg shadow-black/50'>
               <p className='bebas-neue-regular text-4xl lg:text-6xl text-gray-500'>{studyYears} +</p>
               <p className='Oswald text-sm lg:text-md 2xl:text-2xl px-4 text-gray-500'> Years studying software engineering</p>
           </div>
-          <div className='flex flex-col  w-[8rem] lg:w-[12rem] 2xl:w-[17rem] h-[8.32rem] lg:h-[10.4rem] 2xl:h-[11.8rem] text-center justify-center items-center bg-stone-100 rounded-lg shadow-lg shadow-black/50'>
+          <div className='card transition-all duration-1000 ease-out flex flex-col  w-[8rem] lg:w-[12rem] 2xl:w-[17rem] h-[8.32rem] lg:h-[10.4rem] 2xl:h-[11.8rem] text-center justify-center items-center bg-stone-100 rounded-lg shadow-lg shadow-black/50'>
               <p className='bebas-neue-regular text-4xl lg:text-6xl text-gray-500'>{workYears} +</p>
               <p className='Oswald text-sm lg:text-md 2xl:text-2xl px-4 text-gray-500'> Years working experience in tech</p>
           </div>
-          <div className='flex flex-col  w-[8rem] lg:w-[12rem] 2xl:w-[17rem] h-[8.32rem] lg:h-[10.4rem] 2xl:h-[11.8rem] text-center justify-center items-center bg-stone-100 rounded-lg shadow-lg shadow-black/50'>
+          <div className='card transition-all duration-1000 ease-out flex flex-col  w-[8rem] lg:w-[12rem] 2xl:w-[17rem] h-[8.32rem] lg:h-[10.4rem] 2xl:h-[11.8rem] text-center justify-center items-center bg-stone-100 rounded-lg shadow-lg shadow-black/50'>
               <p className='bebas-neue-regular text-4xl lg:text-6xl text-gray-500'>3</p>
               <p className='Oswald text-sm lg:text-md 2xl:text-2xl px-4 text-gray-500'>Different countries worked in</p>
           </div>
-          <div className='flex flex-col  w-[8rem] lg:w-[12rem] 2xl:w-[17rem] h-[8.32rem] lg:h-[10.4rem] 2xl:h-[11.8rem] text-center justify-center items-center bg-stone-100 rounded-lg shadow-lg shadow-black/50'>
+          <div className='card transition-all duration-1000 ease-out flex flex-col  w-[8rem] lg:w-[12rem] 2xl:w-[17rem] h-[8.32rem] lg:h-[10.4rem] 2xl:h-[11.8rem] text-center justify-center items-center bg-stone-100 rounded-lg shadow-lg shadow-black/50'>
             <img className='object-scale-down h-1/5 lg:h-2/5' src="/about/diploma.svg" alt="" />
               <p className='Oswald text-sm lg:text-md 2xl:text-2xl px-4 text-gray-500'>Bachelor's degree in Information Systems</p>
           </div>

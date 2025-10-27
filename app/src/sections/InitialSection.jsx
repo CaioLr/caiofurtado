@@ -18,7 +18,7 @@ const InitialSection = () => {
 
         <div className="absolute top-0 left-0 w-full h-full  bg-stone-900/80" />
 
-        <div className="relative w-[60%] z-10">
+        <div className="relative w-[90%] md:w-[60%] z-10">
             <h1 className="playfair-display-regular text-center text-white text-xl lg:text-2xl 2xl:text-4xl font-bold ">Caio Furtado</h1>
             <p className="playfair-display-regular text-white text-center text-2xl lg:text-4xl 2xl:text-6xl mt-4">This is a portfolio showcasing the work and passion of a software engineer.</p>
         </div>
