@@ -1,34 +1,32 @@
-import React from 'react'
+import { useEffect } from "react";
 
 const ProjectsSection = () => {
 
+    useEffect(() => {
+    const cards = document.querySelectorAll(".card-projects"); // observa todos os cards
 
-   
-    const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        const el = entry.target;
+    const observer = new IntersectionObserver(
+        (entries) => {
+        entries.forEach((entry) => {
+            const card = entry.target;
+
             if (entry.isIntersecting) {
-            el.classList.remove( 'translate-y-5', '-translate-x-2', 'shadow-none');
-            el.classList.add( 'translate-y-0', 'translate-x-0', 'shadow-xl');
-        } else {
-            el.classList.remove( 'translate-y-0', 'translate-x-0', 'shadow-xl');
-            el.classList.add( 'translate-y-5', '-translate-x-2', 'shadow-none');
-        }
-    });
-    }, { threshold: 0.5 });
+            card.classList.remove("translate-y-2.5", "-translate-x-1", "shadow-none");
+            card.classList.add("translate-y-0", "translate-x-0", "shadow-xl");
+            } else {
+            card.classList.remove("translate-y-0", "translate-x-0", "shadow-xl");
+            card.classList.add("translate-y-2.5", "-translate-x-1", "shadow-none");
+            }
+        });
+        },
+        { threshold: 0.3 }
+    );
 
+    cards.forEach((card) => observer.observe(card));
 
-    document.querySelectorAll('.card').forEach(card => {
-        observer.observe(card);
-
-        if (card.getBoundingClientRect().top < window.innerHeight) {
-        card.classList.add( 'translate-y-0', 'translate-x-0', 'shadow-xl');
-        }
-    });
-
-
-    
-    
+    return () => observer.disconnect();
+    }, []);
+        
 
   return (
     <section id="projects" className='relative w-full h-screen flex flex-col gap-8 justify-start md:justify-center snap-center'>
@@ -40,7 +38,7 @@ const ProjectsSection = () => {
         </div>
 
         <div className='absolute hidden md:flex rotate-x-30 rotate-z-20 -right-180 lg:-right-100 xl:-right-100 2xl:-right-60 -bottom-35 w-[68.85rem] h-[53.55rem] xl:w-[81rem] xl:h-[63rem] 2xl:w-[90rem] 2xl:h-[70rem] rounded-2xl border border-stone-500  p-12 '>
-        <div className='card transition-all duration-800 ease-out relative h-full w-full flex flex-col justify-center items-center bg-stone-100 rounded-2xl shadow-xl shadow-black/50'>
+        <div className='card-projects transition-all duration-800 ease-out relative h-full w-full flex flex-col justify-center items-center bg-stone-100 rounded-2xl shadow-black/50'>
             
             <div className='flex w-full h-[10%] justify-center items-center'>
                     <p className='pt-10  bebas-neue-regular mb-8 text-gray-300 text-6xl'>PROJECTS</p>
@@ -51,14 +49,14 @@ const ProjectsSection = () => {
 
                 <div className='flex flex-row h-2/4 w-full gap-8 p-10'>
 
-                        <div className='card transition-all delay-800 duration-700 ease-out relative h-full w-2/4 bg-sky-800 rounded-lg shadow-xl shadow-black/50'>
+                        <div className='card-projects transition-all delay-800 duration-700 ease-out relative h-full w-2/4 bg-sky-800 rounded-lg shadow-black/50'>
                                     
                             <div className='absolute w-full h-full flex justify-center items-center rounded-lg hover:bg-black/60 opacity-0 hover:opacity-100 transition-opacity'>
                                 <span className='open-sans-regular text-lg text-white text-center p-6'></span></div>
 
                         </div>
 
-                        <div className='card transition-all delay-800 duration-700 ease-out relative h-full w-2/4 bg-sky-800 rounded-lg shadow-xl shadow-black/50'>
+                        <div className='card-projects transition-all delay-800 duration-700 ease-out relative h-full w-2/4 bg-sky-800 rounded-lg shadow-black/50'>
                             
                                 <img className='absolute w-full h-full object-cover rounded-lg' src="/projects/oversees.png" alt="" />
 
@@ -71,7 +69,7 @@ const ProjectsSection = () => {
 
                 <div className='flex flex-row h-2/4 w-full gap-8 p-10'>
 
-                            <div className='card transition-all delay-800 duration-700 ease-out relative h-full w-2/4 bg-sky-800 rounded-lg shadow-xl shadow-black/30'>
+                            <div className='card-projects transition-all delay-800 duration-700 ease-out relative h-full w-2/4 bg-sky-800 rounded-lg shadow-black/30'>
 
                                 <img className='absolute w-full h-full object-cover rounded-lg' src="/projects/usedlanguages.png" alt="" />
 
@@ -80,7 +78,7 @@ const ProjectsSection = () => {
 
                             </div>
 
-                            <div className='card transition-all delay-800 duration-700 ease-out relative h-full w-2/4 bg-sky-800 rounded-lg shadow-xl shadow-black/30'>
+                            <div className='card-projects transition-all delay-800 duration-700 ease-out relative h-full w-2/4 bg-sky-800 rounded-lg shadow-black/30'>
 
                                 <img className='absolute w-full h-full object-cover rounded-lg' src="/projects/qrcodecontroller.png" alt="" />
 
