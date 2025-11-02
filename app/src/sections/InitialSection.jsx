@@ -3,34 +3,20 @@ import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy } fro
 
 const InitialSection = () => {
   return (
-    <section className='relative z-10 w-full h-screen flex items-center justify-center snap-center'>
-        
-        <video
-            className="absolute top-0 left-0 w-full h-full object-cover"
-            autoPlay
-            loop
-            muted
-            playsInline
-        >
-            <source src="/test.mp4" type="video/mp4" />
-           
-        </video>
+    <section className='relative w-full h-screen flex flex-col items-center justify-start border-b border-black'>
 
-        <div className="absolute top-0 left-0 w-full h-full  bg-stone-900/80" />
+      <div className='flex flex-col w-full h-1/4 justify-end gap-4 mt-14 lg:mt-20 p-10 lg:px-40 xl:px-60'>
+          <p className='comic-neue-bold text-2xl md:text-4xl'>Hello! I'm Caio,</p>
+          <p className='comic-neue-regular text-xl md:text-3xl'>This is a portfolio showcasing the work and passion of a software engineer.</p>
+      </div>
 
-        <div className="relative w-[90%] md:w-[60%] z-10">
-            <h1 className="playfair-display-regular text-center text-white text-xl lg:text-2xl 2xl:text-4xl font-bold ">Caio Furtado</h1>
-            <p className="playfair-display-regular text-white text-center text-2xl lg:text-4xl 2xl:text-6xl mt-4">This is a portfolio showcasing the work and passion of a software engineer.</p>
-        </div>
+      <div className='flex flex-col lg:flex-row w-full h-2/4 p-10 gap-4'>
 
-        <div className='absolute z-10 bottom-20 animate-[updown_3s_ease-in-out_infinite]'>
-          <Link to="projects" spy={true} smooth={true} offset={50} duration={600} containerId="main-container">
-          <div className='flex flex-col items-center h-8'>
-            
-                <span className='oswald-regular text-white text-lg transition-transform duration-300 hover:scale-105'>Scroll Down</span>
-                <img className='h-8' src="/arrowdown.png" alt="Scroll Down Arrow" />
-           </div></Link>
-        </div>
+        <div className='w-full h-3/4 lg:h-full'><video className='object-cover w-full h-full' autoPlay loop muted playsInline src="/videos/test.mp4"></video></div>
+        <div className='w-full h-3/4 lg:h-full'><video className='object-cover w-full h-full' autoPlay loop muted playsInline src="/videos/videoexample.mp4"></video></div>
+
+      </div>
+   
     </section>
   )
 }
