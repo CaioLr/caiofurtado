@@ -13,7 +13,7 @@ const ProjectsSection = () => {
       </div>
 
         {/* Projects display */}
-        <div className="relative flex flex-col items-center justify-center w-[18rem] h-[36rem]  sm:w-[30rem] sm:h-[40rem] md:w-[42rem] md:h-[31.2rem] lg:w-[54rem] lg:h-[37.44rem] xl:w-[56rem] xl:h-[41.6rem] border-2 rounded-2xl ">
+        <div className="relative flex flex-col items-center justify-center w-[18rem] h-[32rem]  sm:w-[30rem] sm:h-[40rem] md:w-[42rem] md:h-[31.2rem] lg:w-[54rem] lg:h-[37.44rem] xl:w-[56rem] xl:h-[41.6rem] border-2 rounded-2xl ">
 
             {/* Header */}
             <div className="absolute flex flex-row items-center justify-start top-0 w-full h-[7%] border-b-2 gap-1 pl-2">
