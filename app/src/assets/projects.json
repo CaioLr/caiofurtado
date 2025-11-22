@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "Project Alpha",
+        "description": "A cutting-edge project focused on AI development.",
+        "technologies": ["Python", "TensorFlow", "Keras"],
+        "link": ""
+    },
+    {
+        "id": 2,
+        "name": "Project Beta",
+        "description": "A web application for managing personal finances.",
+        "technologies": ["React", "Node.js", "MongoDB"],
+        "link": ""
+    },
+    {
+        "id": 3,
+        "name": "Project Gamma",
+        "description": "Mobile app for fitness tracking and health monitoring.",
+        "technologies": ["Flutter", "Dart", "Firebase"],
+        "link": ""
+    },
+    {
+        "id": 4,
+        "name": "Project Delta",
+        "description": "E-commerce platform with advanced recommendation system.",
+        "technologies": ["Ruby on Rails", "PostgreSQL", "Redis"],
+        "link": ""
+    }
+]

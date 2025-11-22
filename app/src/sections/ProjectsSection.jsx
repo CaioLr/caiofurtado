@@ -1,15 +1,20 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import projectsData from '../assets/projects.json';
 
 const ProjectsSection = () => {
 
-        
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const handleClick = (index) => {
+    setActiveIndex(index);
+  };
 
   return (
     <section id="projects" className='relative flex flex-col items-center justify-center w-full h-screen border-b gap-8'>
 
       {/* Project Title */}
       <div className="flex">
-        <h2 className="bebas-neue-regular text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl text-gray-700 ">Project title</h2>
+        <h2 className="comic-neue-bold text-3xl md:text-4xl lg:text-5xl 2xl:text-5xl text-gray-700 ">{projectsData[activeIndex].name}</h2>
       </div>
 
         {/* Projects display */}
@@ -27,14 +32,27 @@ const ProjectsSection = () => {
             </div>
 
             <div>
-              <p className="comic-neue-regular px-4 lg:px-10 text-xs sm:text-sm md:text-md lg:text-lg xl:text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+              <p className="comic-neue-regular px-4 lg:px-10 text-xs sm:text-sm md:text-md lg:text-lg xl:text-xl">{projectsData[activeIndex].description}</p>
             </div>
 
         </div>
 
         {/* Project page selection */}
         <div className="flex">
-          <h2 className="bebas-neue-regular text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl text-gray-700 ">Project title</h2>
+          <div class="pagination" className="flex gap-4">
+
+            {projectsData.map((project, index) => (
+              <button
+                key={index}
+                className={`pagination-button ${activeIndex === index ? "bg-gray-700 w-6 h-6 rounded-full" : "border-2 border-gray-700 w-6 h-6 rounded-full"}`}
+                onClick={() => handleClick(index)}
+                onTouchStart={() => handleClick(index)} 
+              >
+
+              </button>
+            ))}
+           
+          </div>
         </div>
 
     </section>
