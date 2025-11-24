@@ -1,30 +1,30 @@
 [
     {
         "id": 1,
-        "name": "Project Alpha",
-        "description": "A cutting-edge project focused on AI development.",
-        "technologies": ["Python", "TensorFlow", "Keras"],
-        "link": ""
+        "name": "open-sandbox",
+        "description": "It is an open-source frontend library that creates a sandboxed environment for running code snippets, simulating a development environment directly within web applications. It is primarily designed for testing, experimentation, and educational purposes.",
+        "technologies": [],
+        "image": ""
     },
     {
         "id": 2,
-        "name": "Project Beta",
-        "description": "A web application for managing personal finances.",
-        "technologies": ["React", "Node.js", "MongoDB"],
-        "link": ""
+        "name": "Oversees",
+        "description": "A desktop application designed for comprehensive, real-time monitoring of hardware performance and system processes. It provides users with detailed insights into CPU, GPU, memory usage, Disks and other critical system metrics through an intuitive interface.",
+        "technologies": ["Rust", "Tauri", "React", "JavaScript"],
+        "image": "/projects/oversees.png"
     },
     {
         "id": 3,
-        "name": "Project Gamma",
-        "description": "Mobile app for fitness tracking and health monitoring.",
-        "technologies": ["Flutter", "Dart", "Firebase"],
-        "link": ""
+        "name": "QR Code Controller",
+        "description": "This project involves generating a QR code that, when scanned, allows users to connect to a WebSocket server built with Flask. It facilitates real-time communication between clients and the server, enabling interactive web applications.",
+        "technologies": ["Python", "Flask", "WebSocket", "QR Code"],
+        "image": "/projects/qrcodecontroller.png"
     },
     {
         "id": 4,
-        "name": "Project Delta",
-        "description": "E-commerce platform with advanced recommendation system.",
-        "technologies": ["Ruby on Rails", "PostgreSQL", "Redis"],
-        "link": ""
+        "name": "Github Used Languages",
+        "description": "The idea behind this project is to create a customizable chart that measures the usage of programming languages and/or tools from github profiles. You have a lot of control over what to include, from choosing which languages or tools to display, to defining the relevant file extensions, names, images, colors and more.",
+        "technologies": ["Python","GitHub API"],
+        "image": "/projects/caiolr.svg"
     }
 ]
