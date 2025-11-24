@@ -14,7 +14,7 @@ const ProjectsSection = () => {
 
       {/* Project Title */}
       <div className="flex">
-        <h2 className="comic-neue-bold text-3xl md:text-4xl lg:text-5xl 2xl:text-5xl text-gray-700 ">{projectsData[activeIndex].name}</h2>
+        <h2 className="comic-neue-bold text-3xl md:text-4xl lg:text-4xl text-gray-700 ">{projectsData[activeIndex].name}</h2>
       </div>
 
         {/* Projects display */}
@@ -27,12 +27,24 @@ const ProjectsSection = () => {
                 <div className="flex h-2/4 aspect-square items-center border-2 rounded-full"></div>
             </div>
 
-            <div className="h-[40%] w-3/4  md:h-2/4 md:w-3/4 bg-gray-500 mb-4 sm:mb-6 md:mb-8 rounded-lg border border-gray-600">
-
+            {/* Image */}
+            <div className="h-[40%] w-3/4 mt-[7%] md:h-2/4 md:w-3/4 bg-gray-500 mb-4 sm:mb-6 md:mb-8 rounded-lg border border-gray-600">
+              <img src={projectsData[activeIndex].image} alt={projectsData[activeIndex].name} className="w-full h-full object-cover rounded-lg" />
             </div>
 
+            {/* Description */}
             <div>
               <p className="comic-neue-regular px-4 lg:px-10 text-xs sm:text-sm md:text-md lg:text-lg xl:text-xl">{projectsData[activeIndex].description}</p>
+            </div>
+
+            {/* Technologies */}
+            <div className="flex flex-wrap justify-center gap-4 px-4 mt-8">
+              {projectsData[activeIndex].technologies.map((tech, index) => (
+            
+                  <span key={index} className="comic-neue-bold text-xs md:text-sm lg:text-md xl:text-lg text-gray-500 px-2 py-1 border-2 border-gray-500 rounded-xl">
+                    {tech}
+                  </span>
+              ))}
             </div>
 
         </div>
