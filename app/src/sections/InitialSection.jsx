@@ -3,7 +3,7 @@ import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy } fro
 
 const InitialSection = () => {
   return (
-    <section className='relative w-full h-screen flex flex-col items-center justify-start border-b border-black'>
+    <section className='relative w-full h-screen flex flex-col items-center justify-start'>
 
       <div className='flex flex-col w-full h-1/4 justify-end gap-4 mt-14 lg:mt-20 px-10 py-6 lg:px-40 xl:px-60'>
           <p className='comic-neue-bold text-2xl md:text-3xl lg:text-4xl'>Hello! I'm Caio,</p>

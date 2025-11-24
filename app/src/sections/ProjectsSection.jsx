@@ -10,7 +10,7 @@ const ProjectsSection = () => {
   };
 
   return (
-    <section id="projects" className='relative flex flex-col items-center justify-center w-full h-screen border-b gap-8'>
+    <section id="projects" className='relative flex flex-col items-center justify-center w-full h-screen gap-8'>
 
       {/* Project Title */}
       <div className="flex">
@@ -28,7 +28,7 @@ const ProjectsSection = () => {
             </div>
 
             {/* Image */}
-            <div className="h-[40%] w-3/4 mt-[7%] md:h-2/4 md:w-3/4 bg-gray-500 mb-4 sm:mb-6 md:mb-8 rounded-lg border border-gray-600">
+            <div className="h-[40%] w-3/4 mt-[7%] md:h-2/4 md:w-3/4 bg-gray-500 mb-4 sm:mb-6 md:mb-8 rounded-lg border-2 border-gray-600">
               <img src={projectsData[activeIndex].image} alt={projectsData[activeIndex].name} className="w-full h-full object-cover rounded-lg" />
             </div>
 
