@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "name": "open-sandbox",
+        "name": "RunLab",
         "description": "It is an open-source frontend library that creates a sandboxed environment for running code snippets, simulating a development environment directly within web applications. It is primarily designed for testing, experimentation, and educational purposes.",
         "technologies": [],
         "image": ""
